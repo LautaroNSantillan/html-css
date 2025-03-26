@@ -7,7 +7,7 @@
     <meta name="keywords" content="Sports, Store, Nike, Adidas">
     <meta name="author" content="John Doe">
     <link rel="stylesheet" href="css/main.css">
-    <title>Products</title>
+    <title>Sports Store | Products</title>
 </head>
 <body>
     <header class="nav">
@@ -36,37 +36,68 @@
         </div>
     </header>
 
+    <div class="body-flex">
+
+    
+    <aside class="filters">
+         <h3 class="filters__title">Filter by Category</h3>
+    <ul class="filters__list">
+        <li class="filters__category">Category 1
+            <ul class="filters__subcategory-list">
+                <li class="filters__subcategory">
+                    <input type="checkbox" id="subcat11" name="subcat11">
+                    <label for="subcat11">Subcategory 11</label>
+                </li>
+                <li class="filters__subcategory">
+                    <input type="checkbox" id="subcat12" name="subcat12">
+                    <label for="subcat12">Subcategory 12</label>
+                </li>
+            </ul>
+        </li>
+        <li class="filters__category">Category 2
+            <ul class="filters__subcategory-list">
+                <li class="filters__subcategory">
+                    <input type="checkbox" id="subcat21" name="subcat21">
+                    <label for="subcat21">Subcategory 21</label>
+                </li>
+                <li class="filters__subcategory">
+                    <input type="checkbox" id="subcat22" name="subcat22">
+                    <label for="subcat22">Subcategory 22</label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+        <label>
+            <input type="checkbox"> Nike
+        </label>
+        <label>
+            <input type="checkbox"> Adidas
+        </label>
+        <label>
+            <input type="checkbox"> Puma
+        </label>
+        <label>
+            <input type="checkbox"> Under Armour
+        </label>
+        <label>Price Range
+        <input type="range" min="0" max="500" step="10">
+    </label>
+        <label>
+            Color
+            <input type="color" name="color">
+          </label>
+    </aside>
     <main class="container">
 
-        <h2>Our Products</h2>
+
+        <h2 class="nabla-t2 floating">Our Products</h2>
+        
 
         <div class="content">
-        <aside class="filters">
-            <h3>Filters</h3>
-            <label>
-                <input type="checkbox"> Nike
-            </label>
-            <label>
-                <input type="checkbox"> Adidas
-            </label>
-            <label>
-                <input type="checkbox"> Puma
-            </label>
-            <label>
-                <input type="checkbox"> Under Armour
-            </label>
-            <label>Price Range
-            <input type="range" min="0" max="500" step="10">
-        </label>
-            <label>
-                Color
-                <input type="color" name="color">
-              </label>
-        </aside>
 
         
         <section class="product-grid">
-            <div class="product-card">
+           <div class="product-card">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt="Product">
                 <h3>Product 1</h3>
                 <p>$99.99</p>
@@ -113,11 +144,63 @@
                 <h3>Product 8</h3>
                 <p>$29.99</p>
                 <button>Add to Cart</button>
-            </div>
-        </section>
-        </div>
-    </main>
+            </div> 
 
+        </section>
+    </div>
+
+        <section class="table-section">
+            <h2 class="nabla-t2 floating">Benefits Of Our Products</h2>
+            <table border="1">
+                <caption>Sports Store Product Benefits</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Feature</th>
+                        <th colspan="3">Benefits</th>
+                    </tr>
+                    <tr>
+                        <th>Benefit 1</th>
+                        <th>Benefit 2</th>
+                        <th>Benefit 3</th>
+                    </tr>
+                </thead>
+            </div>
+            <tbody>
+                <tr>
+                    <td>Quality</td>
+                    <td>High Quality</td>
+                    <td>Top materials</td>
+                    <td>Long-lasting</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>Affordable</td>
+                    <td>Great Value for Money</td>
+                    <td>Competitive Pricing</td>
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>Stylish</td>
+                    <td>Modern Aesthetic</td>
+                    <td>Ergonomic Features</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>Extended Warranty</td>
+                    <td>Hassle-free Returns</td>
+                    <td>Product Guarantee</td>
+                </tr>
+            </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">📊📊📊</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+    </main>
+</div>
     <footer class="footer">
         &copy; All rights reserved
     </footer>

@@ -1,7 +1,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     gap: 20px;
     padding: 20px;
   
@@ -10,7 +12,13 @@
       font-weight: bold;
       text-align: center;
     }
+
+    h2 {
+      align-self: flex-start;
   }
+  }
+
+
   
   .content {
     display: flex;
@@ -22,11 +30,10 @@
   
   
   .filters {
-    width: 250px;
+    width: 20%;
     background: #f8f8f8;
     padding: 15px;
     border-radius: 5px;
-    position: sticky;
     top: 20px;
     height: fit-content;
   
@@ -47,7 +54,7 @@
  
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: 900px;
     flex: 1;
