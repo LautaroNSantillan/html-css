@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "vars";
 .animation__circles {
     position: absolute;
     top: 0;
@@ -14,7 +15,7 @@
 .circle {
     width: 50px;
     height: 50px;
-    background-color: steelblue;
+    background-color: vars.$red;
     border-radius: 50%;
     position: absolute;
     animation: bounce infinite linear;
@@ -45,3 +46,27 @@
         }
     }
 }
+
+span {
+	animation: depth 1s ease-in-out alternate infinite;
+	position: relative;
+	display: inline-block;
+	font-variation-settings: "EDPT" 30;
+	font-palette: --Nabla;
+	@for $i from 1 through 12 {
+		&:nth-child(#{$i}) {
+			animation-delay: $i * 0.1s;
+		}
+	}
+}
+
+@keyframes depth {
+	0% {
+		transform: translatex(0) translatey(0);
+	}
+	100% {
+		font-variation-settings: "EDPT" 200;
+		transform: translatex(0.15em) translatey(0.1em);
+	}
+}
+
