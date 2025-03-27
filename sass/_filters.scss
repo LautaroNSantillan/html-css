@@ -1,4 +1,7 @@
+@use 'vars';
 .filters {
+    background-color: #640d60d8;
+    color: vars.$yellow;
     margin-top: 2rem;
 
     &__title {

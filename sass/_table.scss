@@ -1,57 +1,73 @@
 @use 'vars';
 
-.table-section{
-    width: 100%;
+.table-section {
+  width: 100%;
 }
 
 table {
-    border-color: vars.$beige;
-    caption-side: bottom;
-	width: 100%;
-	border-collapse: collapse;
-	overflow: hidden;
+  border-color: vars.$beige;
+  caption-side: bottom;
+  width: 80%;
+  border-collapse: collapse;
+  overflow: hidden;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  td:first-child {
     font-weight: bolder;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    color: vars.$green;
+  }
 }
 
-th,
-td {
-	padding: 15px;
-	background-color: vars.$green;
-	color: vars.$red;
-    text-align: center;
+th, td {
+  padding: 15px;
+  color: vars.$red;
+  text-align: center;
 }
 
 th {
-	text-align: left;
+  text-align: left;
 }
 
 thead {
-	th {
-        text-align: center;
-		background-color: vars.$yellow;
-	}
+  th {
+    text-align: center;
+    background-color: vars.$yellow;
+  }
 }
 
 tbody {
-	tr {
-		&:hover {
-			background-color: rgba(255,255,255,0.3);
-		}
-	}
-	td {
-		position: relative;
-		&:hover {
-			&:before {
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -9999px;
-				bottom: -9999px;
-				background-color: rgba(255,255,255,0.2);
-				z-index: -1;
-			}
-		}
-	}
+  tr {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:nth-child(odd) {
+      background-color: vars.$purple;
+    }
+    &:nth-child(even) {
+        background-color: vars.$lyla;
+      }
+  }
+
+  td {
+    position: relative;
+
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+      }
+    }
+  }
+}
+tfoot{
+    background-color: vars.$purple;
 }
