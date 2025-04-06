@@ -4,6 +4,8 @@
 @use "products";
 @use "table";
 @use "filters";
+@use "contact";
+@use "responsive";
 @import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Fascinate&family=Nabla:EHLT@16&family=Sixtyfour+Convergence:SCAN,XELA@-23,-4&display=swap");
 
 html {
@@ -45,6 +47,11 @@ a {
   font-family: "Fascinate", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+.center{
+  margin: 0 auto;
+  text-align: center;
 }
 
 .fascinate-bold {
